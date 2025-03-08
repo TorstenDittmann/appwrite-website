@@ -74,6 +74,6 @@ RUN apt-get update && \
 RUN fc-cache -f -v
 COPY --from=build /app/build/ build
 COPY --from=build /app/server/ server
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile --prod
+RUN pnpm install --frozen-lockfile --prod
 
 CMD [ "node", "server/main.js"]
