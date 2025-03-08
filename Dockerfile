@@ -64,7 +64,7 @@ RUN corepack enable
 FROM base as build
 
 COPY . .
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
+RUN pnpm install --frozen-lockfile
 RUN NODE_OPTIONS=--max_old_space_size=16384 pnpm run build
 
 FROM base as final
