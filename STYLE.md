@@ -1,5 +1,6 @@
 # Documentation contributing guide
 
+
 Read this document carefully before making PRs to the Appwrite Website repo.
 
 ## What goes in docs?
