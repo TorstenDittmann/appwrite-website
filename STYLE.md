@@ -2,8 +2,6 @@
 
 Read this document carefully before making PRs to the Appwrite Website repo.
 
-
-
 ## What goes in docs?
 
 The Appwrite documentation is meant to provide general guidance that's:
